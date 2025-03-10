@@ -1,0 +1,384 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, lightgray, burlywood);
+    color: darkslategray;
+}
+
+
+header {
+    background-color: sienna;
+    padding: 16px 32px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo a {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 16px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: peru;
+    border-radius: 4px;
+}
+
+
+.home {
+    background-color:  lightgoldenrodyellow;
+    padding: 96px 32px;
+    text-align: center;
+    color: saddleBrown;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.home p {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.cta-btn {
+    background-color: sienna;
+    color: white;
+    padding: 16px 32px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: peru;
+}
+
+
+.about {
+    padding: 64px 32px;
+    background-color:bisque;
+    text-align: center;
+}
+
+.about-container {
+    padding: 48px 32px;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.about p {
+    font-size: 18px;
+    color: olive;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-container:hover {
+    transform: rotate(5deg);
+}
+
+.books {
+    padding: 64px 32px;
+    background-color: white;
+    text-align: center;
+}
+
+.books h2 {
+    font-size: 32px;
+    color: saddleBrown;
+    margin-bottom: 48px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    background-color: lightgoldenrodyellow;
+    padding: 48px;
+}
+
+.book {
+    background-color: white;
+    padding: 24px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book h3 {
+    font-size: 20px;
+    color: darkmagenta;
+    margin-top: 16px;
+}
+
+.book p {
+    font-size: 18px;
+    color: olive;
+    
+}
+
+
+.offers {
+    padding: 64px 32px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.offer {
+    padding: 32px;
+    background-color: rgb(245, 245, 188);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.offer h3 {
+    font-size: 32px;
+    color:saddlebrown;
+    margin-bottom: 16px;
+}
+
+.offer p {
+    font-size: 20px;
+    color: black;
+}
+
+.offer:hover {
+    transform: rotate(30deg);
+}
+
+
+.orders {
+    padding: 64px 32px;
+    background-color: wheat;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders h2 {
+    font-size: 32px;
+    color: saddleBrown;
+    margin-bottom: 32px;
+}
+
+.orders form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.orders label {
+    font-size: 18px;
+    color: saddleBrown;
+}
+
+.orders select,
+.orders input,
+.orders textarea {
+    padding: 16px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.orders button {
+    background-color: sienna;
+    color: white;
+    padding: 16px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.orders button:hover {
+    background-color: peru;
+}
+
+
+.contact {
+    padding: 64px 32px;
+    background-color:antiquewhite ;
+    text-align: center;
+}
+
+.contact-container {
+    background-color: rgb(245, 245, 188) ;
+    padding: 48px 32px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: saddleBrown;
+    margin-bottom: 32px;
+}
+
+.contact p {
+    font-size: 20px;
+    color: black;
+}
+
+.contact a {
+    color: sienna;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: peru;
+}
+
+.contact textarea {
+    width: 80%;
+    height: 150px;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+.contact button {
+    background-color: sienna;
+    color: white;
+    padding: 16px 32px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: peru;
+}
+
+
+
+
+footer {
+    background-color: sienna;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+    position:relative;
+}
+
+/* For screens smaller than 768px (usually tablets or mobile) */
+@media (max-width: 768px) {
+    /* Stack the navigation items vertically */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    /* Adjust the book grid to fit fewer columns */
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 books per row on mobile */
+    }
+
+    .book img {
+        width: 100%; /* Make sure images are responsive */
+    }
+
+    /* Adjust the home section to have smaller padding */
+    .home {
+        padding: 64px 16px;
+    }
+
+    /* Adjust form elements to be more mobile-friendly */
+    .orders select,
+    .orders input,
+    .orders textarea {
+        width: 100%; /* Make form fields responsive */
+    }
+
+    /* Adjust the footer */
+    footer {
+        padding: 16px 0;
+    }
+}
+
+/* For screens larger than 768px but smaller than 1024px (tablets, smaller desktops) */
+@media (max-width: 1024px) {
+    /* Adjust the book grid to show 3 columns */
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr); /* Show 3 books per row */
+    }
+}
+
+/* For larger screens (desktops and larger screens) */
+@media (min-width: 1025px) {
+    /* Default to 4 books per row */
+    .book-grid {
+        grid-template-columns: repeat(4, 1fr); /* Show 4 books per row */
+    }
+}
